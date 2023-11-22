@@ -1,0 +1,9 @@
+/* You can add global styles to this file, and also import other style files */
+@import "plugins/main";
+@import "settings/main";
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Raleway', sans-serif;
+}

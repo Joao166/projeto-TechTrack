@@ -1,0 +1,21 @@
+@import "../../../style/settings/main.scss";
+
+#tecnologie-title {
+    color: #fff;
+
+}
+
+#card-title {
+    color: $color-primary;
+    border-bottom: 1px solid $color-primary;
+}
+
+
+#btn-learn-tecnologie {
+    border: 1px solid $color-primary;
+    color: #fff;
+}
+
+#btn-learn-tecnologie:hover {
+    background-image: linear-gradient(45deg, $color-primary , $color-primary-800 )
+}

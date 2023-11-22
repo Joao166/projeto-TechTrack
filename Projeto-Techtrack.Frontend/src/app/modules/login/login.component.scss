@@ -1,0 +1,22 @@
+@import "./../../app.component.scss";
+@include host;
+
+#title {
+    color: var(--bs-indigo);
+}
+
+#btn-submit {
+    background-color: var(--bs-indigo);
+    font-size: 17px;
+}
+
+#address-register {
+    text-decoration: none;
+    color: var(--bs-indigo);
+
+}
+
+#address-register:hover {
+    font-weight: 700;
+}
+

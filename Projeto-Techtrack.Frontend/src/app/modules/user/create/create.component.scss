@@ -1,0 +1,24 @@
+#title {
+    color: var(--bs-indigo);
+}
+
+#btn-submit {
+    background-color: var(--bs-indigo);
+    font-size: 17px;
+}
+
+.bi {
+    color: var(--bs-indigo);
+    font-size: 1.5em;
+
+
+}
+
+.bi::before {
+    border-radius: 50px;
+    padding: 5px;
+}
+
+.bi:hover::before {
+    background-color: #464343;
+}

@@ -1,0 +1,27 @@
+<div *ngFor="let item of tecnologieInfo" class="container mt-5 d-flex justify-content-center ">
+    <div class="col-6 d-block mx-5 text-center">
+        <div class="fw-bold" id="tecnologie-title" style="font-size: 38px;">
+            {{item.title}}
+        </div>
+        <div class="mt-5">
+            <a class="btn rounded-pill fw-semibold btn-lg btn btn-outline-success" id="btn-learn-tecnologie" href="{{item.link}}" target="_blank"> Leia mais sobre
+                {{item.title}}</a>
+        </div>
+
+    </div>
+    <div class="col-6">
+
+        <div class="shadow-lg card mb-5 bg-dark text-light border border-dark rounded ">
+
+            <div class="card-body ">
+                <div class="card-title fw-semibold" id="card-title" style="font-size: 18px;">
+                    O que é
+                </div>
+                <div class="card-text">
+                    {{item.description}}
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,11 @@
+
+@mixin host {
+    :host {
+        display: block;
+        height: 100%;
+    }
+}
+
+
+
+@include host;

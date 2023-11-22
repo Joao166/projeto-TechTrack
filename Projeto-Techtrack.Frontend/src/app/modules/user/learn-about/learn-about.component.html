@@ -1,0 +1,24 @@
+<div class="container-fluid bg-dark">
+    <div class="row">
+        <div class="col-12">
+            <div class="text-center fw-bold mt-5 " id="occupation-title" style="font-size: 48px;">
+                {{occupationInfo.name}}
+            </div>
+        </div>
+    </div>
+    <div class="row d-flex justify-content-center">
+        <div class="col-6 ">
+
+            <div class="text-center fs-5 mt-4 fw-semibold text-light ">
+                {{occupationInfo.description}}
+            </div>
+
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <app-tecnologie-section [tecnologieInfo]="tecnologies"></app-tecnologie-section>
+        </div>
+    </div>
+</div>

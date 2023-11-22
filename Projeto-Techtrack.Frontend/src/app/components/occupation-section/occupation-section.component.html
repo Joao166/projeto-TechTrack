@@ -1,0 +1,15 @@
+<div class="container mt-5 d-flex justify-content-center mb-5 border-bottom p-5">
+    <div class="col-6 d-block mx-5 text-center">
+        <div class="fw-bold text-light" id="occupation-title" style="font-size: 45px;">
+            {{occupationInfo.name}}
+        </div>
+        <div class="mt-5">
+            <button class="btn rounded-pill btn-lg text-light " id="btn-occupation"
+                routerLink='/user/learn/{{occupationInfo.id}}'> Como se tornar um {{occupationInfo.name}}</button>
+        </div>
+
+    </div>
+    <div class="col-6">
+        <img src="{{occupationInfo.linkImage}}" width="500px" height="400px" alt="">
+    </div>
+</div>
