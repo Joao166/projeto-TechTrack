@@ -14,8 +14,6 @@ export class OccupationService {
    url = `${environment.urlMock}/occupation`
   constructor(private http: HttpClient) { }
 
-
-
   get(): Observable<IOccupation[]> {
     return this.http.get<IOccupation[]>(`${this.url}`)
   }

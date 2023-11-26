@@ -7,11 +7,13 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { LoginModule } from './modules/login/login.module';
 import { UserModule } from './modules/user/user.module';
 import { ReactiveFormsModule } from '@angular/forms';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,15 +1,12 @@
-<div class="container-fluid vh-100">
-    <div class="row h-50">
-        <div class="col position-relative" id="col-main">
-            <div class=" position-absolute top-50 start-50 translate-middle">
-                <p class="fs-1 fw-bold text-light">
-                    Aprenda a programar
-                </p>
-            </div>
+<div class="row h-50">
+    <div class="col position-relative" id="col-main">
+        <div class=" position-absolute top-50 start-50 translate-middle">
+            <p class="fs-1 fw-bold text-light">
+                Aprenda a programar
+            </p>
         </div>
     </div>
-    <div class="row h-50">
-        <app-occupation-section class="bg-dark " *ngFor="let item of occupationInfo" [occupationInfo] ="item"></app-occupation-section>
-
-    </div>
+</div>
+<div class="row h-50" *ngFor="let item of occupationInfo">
+    <app-occupation-section [occupationInfo]="item"></app-occupation-section>
 </div>

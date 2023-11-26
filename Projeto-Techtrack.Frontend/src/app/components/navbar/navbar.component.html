@@ -1,24 +1,24 @@
-<nav class="sticky-top navbar bg-dark" id="navbar" *ngIf="checkIfUserIsLogged();">
-  <div class="container">
-    <a class="navbar-brand m-auto text-light" href="#">
-      <p class="fs-4 fw-bold">Techtrack</p>
-    </a>
-    <div class="d-flex">
 
-      <div class="dropdown top-0">
-        <button class="btn btn-secondary dropdown-toggle btn-dark " type="button" data-bs-toggle="dropdown"
-          aria-expanded="false">
-          {{user_Info.username}}
-          <img src="{{user_Info.linkimage !=null ? user_Info.linkimage : defaultImg}}" width="40" height="40" class="rounded-circle mx-1">
-        </button>
+  <nav class="sticky-top navbar bg-dark mb-5" id="navbar" *ngIf="checkIfUserIsLogged();">
+      <a class="navbar-brand m-auto text-light" href="#">
+        <p class="fs-4 fw-bold">Techtrack</p>
+      </a>
+      <div class="d-flex">
 
-        <ul class="dropdown-menu dropdown-menu-dark">
-          <li><a class="dropdown-item " (click)="onLogout()">Sair</a></li>
-        </ul>
+        <div class="dropdown top-0">
+          <button class="btn btn-secondary dropdown-toggle btn-dark " type="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            {{user_Info.username}}
+            <img src="{{user_Info.linkimage !=null ? user_Info.linkimage : defaultImg}}" width="40" height="40"
+              class="rounded-circle mx-1">
+          </button>
+
+          <ul class="dropdown-menu dropdown-menu-dark">
+            <li><a class="dropdown-item " (click)="onLogout()">Sair</a></li>
+          </ul>
+        </div>
       </div>
+  </nav>
 
 
-    </div>
-  </div>
-</nav>
-<ng-content></ng-content> <!-- responsável por carregar o elemento dentro do navbar no caso seria o router-outlet-->
+

@@ -1,14 +1,13 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { ILogin } from 'src/app/components/occupation-section/interfaces/ILogin';
 import { IUser } from 'src/app/components/occupation-section/interfaces/IUser';
 import { environment } from 'src/environments/environment';
 @Injectable({
   providedIn: 'root'
 })
 export class UserService {
-  user?: ILogin;
+  user?: IUser;
   url = `${environment.urlMock}/user`
   constructor(private http: HttpClient) { }
   
