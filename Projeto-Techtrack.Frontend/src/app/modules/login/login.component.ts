@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms'
 import { Router } from '@angular/router';
 import { first } from 'rxjs';
-import { ILogin } from 'src/app/components/occupation-section/interfaces/ILogin';
 import { IUser } from 'src/app/components/occupation-section/interfaces/IUser';
 import { UserService } from 'src/app/shared/services/user/user.service';
 import Swal from 'sweetalert2'
